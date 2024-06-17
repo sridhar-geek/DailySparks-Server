@@ -9,17 +9,16 @@
 - [setup&Installation](#setupinstallation)
 - [Testing](#testing)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## OverView
 
-**It is build to serve routes and data for Daily Sparks [website](https://book-easy-client.vercel.app/)**
+**It is build to serve routes and data for Daily Sparks [website](https://daily-spark.vercel.app/)**
 
 ### Links
 
 **This is the link for Frontend Code which uses Data from this server**
-- GitHub URL : [Code](https://github.com/sridhar-geek/Orange-Delight)
+- GitHub URL : [Code](https://github.com/sridhar-geek/Daily-Spark)
 
 ### Tech Stack
 - Nodejs
@@ -32,7 +31,7 @@
  **Clone the repository using this command**
 
 ```sh
-  `git clone http:github.com
+  `git clone https://github.com/sridhar-geek/DailySparks-Server.git
   ```
   
   **after that install dependencies using `npm install` command and then run the project using `npm start`**
@@ -42,9 +41,9 @@
  ***To test the api routes in Postman, use this endpoints***
 
 ```sh
-Base Url: https://book-easy-server.vercel.app/api/v1/news
+Base Url: https://dailysparks-server.onrender.com/api/v1/news
 ```
-
+#### Along with news use can also queries like page and limit which enables pagination
 
 1. Top News Rotes
 
@@ -54,8 +53,10 @@ Method: **GET**
 
       Route: /top-news
 
-example response  
+example response of news article
+
    {
+
       by: "pansa2",
       id: 26245933,
       score: 15,
@@ -63,8 +64,10 @@ example response
       title: "Python Developers Survey 2020 Results",
       type: "story",
       url: "https://www.jetbrains.com/lp/python-developers-survey-2020/",
-    },
 
+    }
+
+Ex:  https://dailysparks-server.onrender.com/api/v1/news/latest-news?page=2&limit=10
 
 2. Best News Route
 
