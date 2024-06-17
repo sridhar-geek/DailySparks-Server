@@ -12,8 +12,8 @@ import ErrorHandlerMiddleware from "./Errors/CustomError.js";
 /* Middlewares  */
 app.use(
   cors({
-    origin:'http://localhost:3000'
-    // origin: "https://daily-spark.vercel.app",
+    // origin:'http://localhost:3000'
+    origin: "https://daily-spark.vercel.app",
   })
 );
 app.use('/api/v1/news', NewsRoutes)
